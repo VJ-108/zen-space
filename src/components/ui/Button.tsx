@@ -25,12 +25,21 @@ const Button = ({
 };
 
 const buttonVariants = cva(
-  "border border-black rounded-md p-2 text-base m-1 transition-all duration-300",
+  "border text-white rounded-md p-2 m-1 transform hover:-translate-y-1 transition duration-400 focus:outline-none",
   {
     variants: {
       variant: {
-        primary: "bg-indigo-500 text-white hover:bg-indigo-600",
-        secondary: "bg-purple-600 text-white hover:bg-purple-700",
+        primary:
+          "bg-deep-purple hover:bg-deep-purple-dark border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-deep-purple",
+        outline:
+          "bg-transparent border-deep-purple hover:bg-deep-purple-dark hover:text-white ring-2 ring-offset-2 ring-deep-purple",
+        focus:
+          "bg-deep-purple hover:bg-deep-purple-dark border-transparent ring-2 ring-offset-2 ring-deep-purple",
+        shadow:
+          "bg-deep-purple text-white shadow-lg hover:shadow-xl hover:bg-deep-purple-dark focus:ring-2 focus:ring-offset-2",
+        animate:
+          "bg-deep-purple text-white hover:scale-105 hover:bg-deep-purple-dark transition-transform focus:ring-2 focus:ring-offset-2",
+        none: "border-none ring-none",
       },
       size: {
         small: "text-sm py-1 px-2",

@@ -1,9 +1,12 @@
 import Navbar from "./components/Navbar";
 
 function App() {
+
   return (
     <>
-      <Navbar />
+      <div className="bg-black min-h-screen ">
+        <Navbar />
+      </div>
     </>
   );
 }
