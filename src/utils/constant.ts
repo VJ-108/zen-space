@@ -50,3 +50,43 @@ export const features = [
       "Tools to monitor meditation progress, wellness goals, and mental well-being over time.",
   },
 ];
+
+export const SubscriptionPlans = [
+  {
+    title: "Basic Plan",
+    price: "$9.99/month",
+    perks: [
+      "Access to all guided meditation sessions (limited to 10 sessions/month)",
+      "Weekly mindfulness tips and articles",
+      "Access to community forums",
+      "Basic progress tracking (limited to meditation minutes)",
+    ],
+  },
+  {
+    title: "Premium Plan",
+    price: "$19.99/month",
+    perks: [
+      "Unlimited access to all guided meditation sessions",
+      "Full access to all mindfulness courses and yoga tutorials",
+      "Personalized wellness plan",
+      "Daily affirmations and inspirations",
+      "Access to exclusive live classes and workshops",
+      "Advanced progress tracking (including mood and stress levels)",
+      "Access to the meditation music library",
+      "Priority support in community forums",
+    ],
+  },
+  {
+    title: "Zen Master Plan",
+    price: "$29.99/month",
+    perks: [
+      "All Premium Plan perks",
+      "One-on-one virtual sessions with meditation and wellness coaches (1 session/month)",
+      "Exclusive content and early access to new courses and workshops",
+      "Monthly wellness reports with personalized recommendations",
+      "Discounts on future live events and wellness products",
+      "VIP access to special community events and challenges",
+      "Unlimited progress tracking with detailed analytics",
+    ],
+  },
+];

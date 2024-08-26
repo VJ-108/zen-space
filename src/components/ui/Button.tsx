@@ -30,15 +30,13 @@ const buttonVariants = cva(
     variants: {
       variant: {
         primary:
-          "bg-deep-purple hover:bg-deep-purple-dark border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-deep-purple",
+          "bg-blue-600 hover:bg-blue-700 border-transparent focus:ring-2 focus:ring-offset-2 focus:ring-blue-600",
         outline:
-          "bg-transparent border-deep-purple hover:bg-deep-purple-dark hover:text-white ring-2 ring-offset-2 ring-deep-purple",
+          "bg-transparent border-blue-600 hover:bg-blue-700 hover:text-white ring-2 ring-offset-2 ring-blue-600",
         focus:
-          "bg-deep-purple hover:bg-deep-purple-dark border-transparent ring-2 ring-offset-2 ring-deep-purple",
-        shadow:
-          "bg-deep-purple text-white shadow-lg hover:shadow-xl hover:bg-deep-purple-dark focus:ring-2 focus:ring-offset-2",
+          "bg-blue-600 hover:bg-blue-700 border-transparent ring-2 ring-offset-2 ring-blue-600",
         animate:
-          "bg-deep-purple text-white hover:scale-105 hover:bg-deep-purple-dark transition-transform focus:ring-2 focus:ring-offset-2",
+          "bg-blue-600 text-white hover:scale-105 hover:bg-blue-700 transition-transform focus:ring-2 focus:ring-offset-2",
         none: "border-none ring-none",
       },
       size: {
