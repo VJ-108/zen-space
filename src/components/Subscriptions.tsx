@@ -11,18 +11,18 @@ const SubscriptionCard = ({
   const { title, price, perks } = plan;
   return (
     <>
-      <div className="border rounded-lg p-8 cursor-pointer">
-        <h3 className="text-3xl md:text-4xl font-bold text-gray-200 my-4 text-center">
+      <div className="border rounded-lg p-8 cursor-pointer transition-transform duration-300 md:hover:outline md:hover:outline-blue-600 md:hover:shadow-xl md:hover:shadow-cyan-600 md:hover:scale-105">
+        <h3 className="text-2xl md:text-4xl font-bold text-gray-200 my-4 text-center">
           {title}
         </h3>
-        <p className="text-gray-300 text-xl md:text-2xl text-center my-4">
+        <p className="text-gray-300 text-lg md:text-2xl text-center my-4">
           {price}
         </p>
         <Button size={"large"} variant={"focus"} className="w-full my-10">
           Choose Plan
         </Button>
-        <h2 className="text-lg md:text-xl text-gray-200">This includes: </h2>
-        <ul className="text-gray-400 my-4 md:my-6 text-lg md:text-xl">
+        <h2 className="text-base md:text-xl text-gray-200">This includes: </h2>
+        <ul className="text-gray-400 my-4 md:my-6 text-base md:text-xl">
           {perks.map((perk, index) => (
             <li key={index} className="py-1 md:py-3">
               <FontAwesomeIcon icon={faCircleCheck} /> {perk}
