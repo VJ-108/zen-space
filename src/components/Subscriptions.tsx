@@ -1,38 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SubscriptionPlans } from "../utils/constant";
-import Button from "./ui/Button";
-import { faCircleCheck } from "@fortawesome/free-solid-svg-icons";
-
-const SubscriptionCard = ({
-  plan,
-}: {
-  plan: { title: string; price: string; perks: Array<string> };
-}) => {
-  const { title, price, perks } = plan;
-  return (
-    <>
-      <div className="border rounded-lg p-8 cursor-pointer transition-transform duration-300 md:hover:outline md:hover:outline-blue-600 md:hover:shadow-xl md:hover:shadow-cyan-600 md:hover:scale-105">
-        <h3 className="text-2xl md:text-4xl font-bold text-gray-200 my-4 text-center">
-          {title}
-        </h3>
-        <p className="text-gray-300 text-lg md:text-2xl text-center my-4">
-          {price}
-        </p>
-        <Button size={"large"} variant={"focus"} className="w-full my-10">
-          Choose Plan
-        </Button>
-        <h2 className="text-base md:text-xl text-gray-200">This includes: </h2>
-        <ul className="text-gray-400 my-4 md:my-6 text-base md:text-xl">
-          {perks.map((perk, index) => (
-            <li key={index} className="py-1 md:py-3">
-              <FontAwesomeIcon icon={faCircleCheck} /> {perk}
-            </li>
-          ))}
-        </ul>
-      </div>
-    </>
-  );
-};
+import SubscriptionTemplate from "./ui/SubscriptionTemplate";
 
 const Subscriptions = () => {
   return (
@@ -43,7 +10,14 @@ const Subscriptions = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {SubscriptionPlans.map((plan, index) => {
-            return <SubscriptionCard key={index} plan={plan} />;
+            return (
+              <SubscriptionTemplate
+                key={index}
+                title={plan.title}
+                price={plan.price}
+                perks={plan.perks}
+              />
+            );
           })}
         </div>
       </div>

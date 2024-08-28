@@ -31,12 +31,14 @@ const Card = ({
 };
 
 const cardVariants = cva(
-  "rounded-lg p-6 cursor-pointer transform duration-300 hover:ring-4 hover:ring-blue-600 hover:-translate-y-4",
+  "rounded-lg p-6 cursor-pointer transform duration-300",
   {
     variants: {
       variant: {
-        default: "bg-white",
-        metallic: "bg-zinc-900",
+        default:
+          "bg-white hover:ring-4 hover:ring-blue-600 hover:-translate-y-4",
+        metallic:
+          "bg-zinc-900 hover:ring-4 hover:ring-blue-600 hover:-translate-y-4",
       },
     },
     defaultVariants: {
