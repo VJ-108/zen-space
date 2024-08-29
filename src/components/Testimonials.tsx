@@ -43,9 +43,9 @@ const Testimonials = () => {
               <Card
                 title={test.title}
                 description={test.description}
-                variant={"metallic"}
-                titleVariant={{ variant: "metallic" }}
-                descriptionVariant={{ variant: "metallic" }}
+                variant={"dark"}
+                titleVariant={{ variant: "dark" }}
+                descriptionVariant={{ variant: "dark" }}
                 className="md:h-full"
               />
             </div>

@@ -31,14 +31,13 @@ const Card = ({
 };
 
 const cardVariants = cva(
-  "rounded-lg p-6 cursor-pointer transform duration-300",
+  "rounded-lg p-6 cursor-pointer transform duration-300 hover:ring-4 hover:-translate-y-4",
   {
     variants: {
       variant: {
-        default:
-          "bg-white hover:ring-4 hover:ring-blue-600 hover:-translate-y-4",
-        metallic:
-          "bg-zinc-900 hover:ring-4 hover:ring-blue-600 hover:-translate-y-4",
+        default: "bg-white hover:ring-blue-600",
+        metallic: "bg-zinc-900 hover:ring-blue-600",
+        dark: "bg-gray-900 hover:ring-slate-700",
       },
     },
     defaultVariants: {
@@ -52,6 +51,7 @@ const titleVariants = cva("font-semibold mb-4 ", {
     variant: {
       default: "text-neutral-800",
       metallic: "text-neutral-200",
+      dark: "text-white",
     },
     size: {
       small: "text-lg md:text-xl",
@@ -70,6 +70,7 @@ const descriptionVariants = cva("", {
     variant: {
       default: "text-neutral-700",
       metallic: "text-neutral-400",
+      dark: "text-gray-300",
     },
     size: {
       small: "text-sm md:text-base",
