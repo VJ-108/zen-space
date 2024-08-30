@@ -3,7 +3,7 @@ import Button from "./ui/Button";
 const Footer = () => {
   return (
     <>
-      <div className="container mx-auto mt-20">
+      <div className="container mx-auto mt-28">
         <div className="text-center mb-14 hidden md:block">
           <Button size={"large"} className={"text-2xl"} variant={"outline"}>
             Get Started

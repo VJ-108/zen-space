@@ -22,7 +22,7 @@ const Testimonials = () => {
   }, [isHovered]);
 
   return (
-    <div className="container mx-auto mt-8 md:mt-16 overflow-hidden">
+    <div className="container mx-auto mt-14 md:mt-28 overflow-hidden">
       <div className="text-2xl md:text-6xl font-bold mb-8 md:mb-16 text-center">
         What Our Clients Say
       </div>
