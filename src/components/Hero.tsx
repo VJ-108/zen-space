@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
     <>
-      <div className="container px-5 mx-auto flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 h-screen md:-mt-14">
+      <div className="container px-5 mx-auto flex flex-col md:flex-row space-y-5 md:space-y-0 md:space-x-5 md:my-36 my-14">
         <div className="flex justify-center items-center w-full md:w-2/3">
-          <div className="text-4xl md:text-7xl font-bold text-center md:text-left leading-tight pt-24 md:pt-0 ">
+          <div className="text-4xl md:text-7xl font-bold text-center md:text-left leading-tight pt-16 md:pt-0 ">
             Your <span className="text-blue-700 ">Sanctuary</span> for{" "}
             <span className="text-blue-700">Meditation</span>,{" "}
             <span className="text-blue-700">Wellness</span>, and Inner Peace
