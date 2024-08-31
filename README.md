@@ -2,17 +2,6 @@
 
 Zen-space is a landing page designed for a meditation and wellness hub. This project showcases reusable components created with Tailwind CSS, featuring different variants using `class-variance-authority`, `clsx`, and `tw-merge`. The application is built with React and TypeScript, ensuring type safety and a fully mobile-responsive design.
 
-## Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
-
 ## Features
 
 - **Reusable Tailwind CSS Components:** Components are created with Tailwind CSS, allowing for easy styling and customizability.
